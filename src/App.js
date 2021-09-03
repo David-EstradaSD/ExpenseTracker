@@ -38,7 +38,7 @@ function App() { // note that this is the standard JS function syntax
 
   return (
     <div>
-      <h2>"Let's get started!"</h2>
+      <h2>Let's get started!</h2>
       <Expenses items={expenses}/>
     </div>
   );
