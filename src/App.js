@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
+import React from "react";
+import Expenses from "./components/Expenses/Expenses";
 
-function App(items) {
+function App() { // note that this is the standard JS function syntax 
   const expenses = [
     {
       id: "e1",
@@ -26,9 +27,18 @@ function App(items) {
       date: new Date(2021, 5, 12),
     },
   ];
+  // This next block of code is the more cumbersome code that get's created under the hood 
+  // by JSX and requires to import React from package.json. The syntax is as such bc 
+  // createElement() creates a single element and so we have to add it's child elements, etc.
+  // return React.createElement(
+  //   'div', {}, 
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, {items: expenses})
+  // );
 
   return (
     <div>
+      <h2>"Let's get started!"</h2>
       <Expenses items={expenses}/>
     </div>
   );
