@@ -22,6 +22,6 @@ const ExpenseItem = (props) => { // note that this is an Arrow Function syntax
       <button onClick={clickHandler}>Change Title</button>
     </Card> // Card is now a custom component defined by us and its values are defined by the {props.children} in Card.js
   );
-}
+};
 
 export default ExpenseItem;

@@ -1,11 +1,14 @@
 import React from "react";
 
-function NewExpense() {
+import ExpenseForm from "./ExpenseForm";
+import "./NewExpense.css";
 
-    return <div>
-        <form></form>
+const NewExpense = () => {
+  return (
+    <div className="new-expense">
+      <ExpenseForm />
     </div>
+  );
+};
 
-}
-
-export default NewExpense();
+export default NewExpense;
