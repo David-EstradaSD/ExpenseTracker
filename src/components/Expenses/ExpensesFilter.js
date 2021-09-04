@@ -6,7 +6,7 @@ const ExpensesFilter = (props) => {
   const dropdownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value); // we can forward event.target.value which is just the selected year by the user
   };
-
+ 
   return (
     <div className='expenses-filter'>
       <div className='expenses-filter__control'>
